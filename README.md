@@ -10,17 +10,26 @@ Manager's Dashboard is a responsive web application designed to help project man
 
 ## 🔧 Technologies Used
 
-### **Frontend**
-- ![React](https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) 
-- ![Tailwind CSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) 
-- ![Chart.js](https://img.shields.io/badge/recharts-F5788D?style=for-the-badge&logo=recharts&logoColor=white) 
+<div align="center">
+ 
+ <div align="center"><h3 align="center">Frontend</h3>
+<img src="https://img.shields.io/badge/react-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" align="center" alt="reactjs" />
+<img src="https://img.shields.io/badge/tailwindcss-%230081CB.svg?style=for-the-badge&logo=tailwindcss&logoColor=white" align="center" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/recharts-%230081CB.svg?style=for-the-badge&logo=recharts&logoColor=white" align="center" alt="recharts" />
+</div>
 
-### **Tools**
-- ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) 
-- ![NPM](https://img.shields.io/badge/npm-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) 
+<div align="center"><h3 align="center">Tools</h3> 
+<img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"  align="center" alt="git"/>
+<img src = "https://img.shields.io/badge/npm-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" align="center" alt="npm">
+</div>
+</div>
 
-### **Deployed On**
-- ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) 
+<div align="center"><h3 align="center">Deployed On:</h3>
+  <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=#00C7B7"  alt="vercel"/>
+</div>
+</p>
+
+<br/>
 
 ---
 
