@@ -40,11 +40,11 @@ const budgetData = [
 
 const CustomToggle = ({ options, activeOption, onToggle }) => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center gap-1">
       <div className="text-xs">{options[0]}</div>
 
       <div
-        className="relative flex items-center w-12 h-6 bg-gray-200 rounded-full p-1 cursor-pointer transition-all duration-300"
+        className="relative flex items-center w-14 h-5 bg-gray-200 rounded-full p-1 cursor-pointer transition-all duration-300"
         onClick={() =>
           onToggle(activeOption === options[0] ? options[1] : options[0])
         }
@@ -93,12 +93,11 @@ const RevenueAndBudget = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Revenue Chart */}
         <div className="lg:col-span-2 bg-white rounded-xl shadow-sm p-6">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
             <div>
               <h2 className="text-lg font-medium text-gray-800 mb-1">
                 Total revenue
               </h2>
-              <div className="text-gray-400 text-sm">Goal: €8,000</div>
             </div>
             <CustomToggle
               options={["Month", "Week"]}
@@ -106,6 +105,7 @@ const RevenueAndBudget = () => {
               onToggle={setActiveTab}
             />
           </div>
+          <div className="text-gray-400 text-sm">Goal: €8,000</div>
           <div className="h-[300px]">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={revenueData[activeTab.toLowerCase()]}>
@@ -144,7 +144,7 @@ const RevenueAndBudget = () => {
               onToggle={setActiveBudgetView}
             />
           </div>
-          <div className="flex justify-center items-center h-[240px] relative">
+          <div className="flex justify-center items-center h-[240px] relative text-xs">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
@@ -167,14 +167,14 @@ const RevenueAndBudget = () => {
               <div className="text-sm text-gray-500">Total projects</div>
             </div>
           </div>
-          <div className="flex justify-center space-x-6 mt-4">
+          <div className="flex justify-center space-x-2 mt-4">
             {budgetData.map((item, index) => (
-              <div key={index} className="flex items-center space-x-2">
+              <div key={index} className="flex items-center space-x-1">
                 <div
                   className="w-3 h-3 rounded-full"
                   style={{ backgroundColor: item.color }}
                 ></div>
-                <span className="text-sm text-gray-600">{item.name}</span>
+                <span className="text-[10px] text-gray-600">{item.name}</span>
               </div>
             ))}
           </div>

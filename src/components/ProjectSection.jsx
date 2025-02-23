@@ -1,5 +1,4 @@
 import React from "react";
-import { format } from "date-fns";
 
 const ProjectDashboard = () => {
   const projects = [
@@ -53,7 +52,7 @@ const ProjectDashboard = () => {
     <>
       {/* Projects Section */}
       <div>
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 gap-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 gap-4 mt-6">
           <h2 className="text-xl font-semibold text-gray-800">Budget status</h2>
           <div className="flex flex-wrap gap-2">
             <button className="bg-emerald-600 text-white px-4 py-2 rounded-lg">
@@ -93,9 +92,13 @@ const ProjectDashboard = () => {
 
                 <div className="flex-1">
                   <div className="flex justify-between text-sm mb-2">
-                    <span className="text-gray-500">
-                      Total Budget: {project.totalBudget}
+                    <span className="text-gray-500">Total Budget:</span>
+                    <span className="text-emerald-500">
+                      {project.totalBudget}
                     </span>
+                  </div>
+                  <div className="flex justify-between text-sm mb-2">
+                    <span className="text-gray-500">Profitability(100%):</span>
                     <span
                       className={
                         project.profitability.includes("-")
@@ -114,8 +117,8 @@ const ProjectDashboard = () => {
                   </div>
                 </div>
 
-                <div className="flex justify-between items-end text-sm text-gray-500">
-                  <p>{format(new Date(project.date), "MMM dd, yyyy")}</p>
+                <div className="flex justify-between items-end text-xs text-gray-500">
+                  <p>Actual hours: 1.100</p>
                   <p>{project.hours}</p>
                 </div>
               </div>

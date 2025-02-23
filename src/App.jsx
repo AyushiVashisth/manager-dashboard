@@ -10,7 +10,7 @@ function App() {
       <Navbar />
 
       <main className="max-w-[1400px] mx-auto px-8 py-6">
-        <div className="grid grid-cols-12 gap-6">
+        <div className="grid md:grid-cols-8 sm:grid-cols-1 grid-cols-1  lg:grid-cols-10 gap-4">
           {/* Left Section - Stats and Revenue */}
           <div className="col-span-8 space-y-6">
             <StatsCards />
@@ -18,7 +18,7 @@ function App() {
           </div>
 
           {/* Right Section - Team Mood */}
-          <div className="col-span-4">
+          <div className="col-span-8 sm:col-span-8 md:col-span-8 lg:col-span-2">
             <TeamMood />
           </div>
         </div>
